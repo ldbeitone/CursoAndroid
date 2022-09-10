@@ -78,6 +78,6 @@ private fun checkLoginPass(userPass: String): Boolean {
     if (userPass.none { it in 'a'..'z' }) return false
     if (userPass.none { it in '0'..'9' }) return false
     return userPass.none { it !in 'A'..'Z' && it !in 'a'..'z' && it !in '0'..'9' }
-    //return userPass.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])".toRegex())
+    
 
 }
